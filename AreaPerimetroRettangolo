@@ -1,0 +1,30 @@
+
+
+package areaperimetro;
+import java.util.Scanner;
+        
+public class Areaperimetro {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        int b,h;
+        int area;
+        int perimetro;
+        Scanner input = new Scanner(System.in);
+        do{
+            System.out.println("Inserire valore Base:");
+            b = input.nextInt();
+        }while(b<0);
+        do{
+            System.out.println("Inserire valore Altezza:");
+            h = input.nextInt();
+        }while(h<0);
+        perimetro=(b+h)*2;
+        area=b*h;
+                
+        System.out.println(area);
+    }
+    
+}
